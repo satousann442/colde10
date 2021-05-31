@@ -4,6 +4,17 @@
   display: none;
 }
 
+button{
+  border: none;
+  background: none;
+  cursor:pointer;
+}
+
+button:hover{
+  opacity: 0.7;
+  transition: 0.5s;
+}
+
 @media screen and (max-width:768px){
   .sp{
   display: block;
@@ -17,6 +28,40 @@
 body{
   font-family: 'Noto Sans JP', sans-serif;
   font-weight: bold;
+}
+
+/* header */
+
+header{
+  background: url(../img/header.png) no-repeat top center;
+  background-size: cover;
+  height:100vh
+}
+
+header .container{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 5%;
+}
+
+  h4{
+    padding-top: 10%;
+}
+
+@media screen and (max-width:768px){
+  header{
+    background: url(../img/header_bg_sp.png)no-repeat top center;
+    background-size: cover;
+    height:auto;
+  }
+
+  header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5%;
+  }
 }
 
 /* perfomance */
@@ -84,5 +129,90 @@ body{
   flex-direction: column;
   align-items: center;
   padding-top: 3%;
+  padding-bottom: 10%;
 }
 }
+
+/* solution */
+
+.solution{
+  background-color: #FFDB00;
+  text-align: center;
+  padding-bottom: 3%;
+}
+
+.solution h2{
+  padding-top: 3%;
+}
+
+@media screen and (max-width:768px){
+
+  .solution{
+    background-color: #ffffff;
+  }
+  }
+
+  /* agent */
+
+  .agent{
+    background: url(../img/agent_bg.png) no-repeat top center;
+    background-size: cover;
+    text-align: center;
+    padding-bottom: 3%;
+  }
+
+  .agent h2{
+    padding-top: 3%;
+  }
+
+  @media screen and (max-width:768px){
+
+    .agent{
+      background: url("../img/agent_bg_sp.png" ) no-repeat top center;
+      background-size: cover;
+    }
+
+    .agent .sp img{
+      padding-bottom: 5%;
+    }
+    }
+
+    /* review */
+
+    .review{
+      background-color: #FBDB00;
+      text-align: center;
+      padding-bottom: 3%;
+    }
+
+    .review h2{
+      padding-top: 3%;
+    }
+
+    @media screen and (max-width:768px){
+
+      .review .sp img{
+        padding-bottom: 5%;
+      }
+      }
+
+      /* flow */
+
+      .flow{
+        text-align: center;
+        padding-bottom: 3%;
+      }
+
+      .flow h2{
+        padding-top: 3%;
+      }
+
+      /* footer */
+
+      footer{
+        background-color: #FBDB00;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        height: 20vh;
+      }
